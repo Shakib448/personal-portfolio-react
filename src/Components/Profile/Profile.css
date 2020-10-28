@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+.profile {
+  font-family: "Josefin Sans", sans-serif;
+}
+.profile__imgCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.profile__title {
+  background-color: lightgray;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+.profile__card {
+  border-radius: 10px;
+}
+
+.profile__cardBody {
+  background-color: lightgray;
+}
+
+.profile__icon {
+  color: #000;
+  font-size: 40px !important;
+  transition: transform 0.5s ease-in-out !important;
+}
+.profile__iconLocation {
+  font-size: 15px !important;
+}
+.profile__iconPhone {
+  font-size: 15px !important;
+}
+
+.profile__icon:hover {
+  transform: scale(1.5);
+}
+
+.profile__iconFacebook {
+  transition: 0.5s ease-in-out !important;
+  opacity: 0.5;
+}
+
+.profile__iconFacebook:hover {
+  color: #3c70da;
+  opacity: 1;
+}
+
+.profile__iconLinkedIn {
+  transition: 0.5s ease-in-out !important;
+  opacity: 0.5;
+}
+
+.profile__iconLinkedIn:hover {
+  color: #0073b2;
+  opacity: 1;
+}
+
+.profile__iconGithub {
+  transition: 0.5s ease-in-out !important;
+  opacity: 0.5;
+}
+
+.profile__iconGithub:hover {
+  opacity: 1;
+}
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 1px solid #3c70da;
+  border-radius: 5px;
+  color: #3c70da;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px 50px;
+  position: relative;
+  z-index: 1;
+}
+
+button::before,
+button::after {
+  background: #000;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+button:hover > a {
+  color: #fff;
+}
+
+.btn-2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-2:hover:after {
+  width: 100%;
+}
