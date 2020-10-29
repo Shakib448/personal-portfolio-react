@@ -8,8 +8,10 @@ const Header = () => {
   return (
     <Col
       className="intro  m-3"
-      style={{ border: "1px solid red", height: "440px" }}
-      md={8}
+      style={{ height: "440px" }}
+      lg={8}
+      md={12}
+      sm={12}
     >
       <ThemeProvider theme={theme}>
         <>

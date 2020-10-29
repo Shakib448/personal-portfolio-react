@@ -10,7 +10,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 
 const Profile = () => {
   return (
-    <Col className="profile m-3" md={3}>
+    <Col className="profile m-3" lg md={8} sm={12}>
       <Card className="text-center p-3 profile__card">
         <Avatar
           className="profile__imgCenter"

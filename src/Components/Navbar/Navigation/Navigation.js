@@ -55,26 +55,39 @@ const NavBrandName = styled.h1`
 const slideIn = keyframes`
     from {
         right: -270px;
+
     }
     to {
         right: -20px;
+
     }
 `;
 
 const slideOut = keyframes`
     from {
         right: -20px;
+
     }
     to {
         right: -270px;
+
     }
 `;
 
 const NavList = styled.ul`
   display: flex;
+  visibility: ${(props) =>
+    props.display === "default"
+      ? "hidden"
+      : props.display === "opened"
+      ? "show"
+      : "hidden"};
+  opacity: ${(props) =>
+    props.display === "default" ? 0 : props.display === "opened" ? 1 : 0};
+  transition: opacity 600ms, visibility 600ms;
   margin: 0 20px;
-  position: fixed;
-  top: 80px;
+  position: absolute;
+  top: 0;
   right: -300px;
   height: 440px;
   width: 250px;
