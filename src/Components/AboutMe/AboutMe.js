@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Header from "../Header/Header";
+import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
     <>
       <Header />
-      <Container style={{ backgroundColor: "rgb(211,211,211,.1)" }}>
+      <Container className="aboutMe" style={{}}>
         <Row>
           <blockquote className="blockquote text-center p-3">
             <h6 className="mt-2 mb-2">

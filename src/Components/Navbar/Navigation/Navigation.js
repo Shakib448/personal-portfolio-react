@@ -34,6 +34,7 @@ const NavContainer = styled.div`
   box-shadow: rgba(43, 83, 135, 0.08) 0px 3px 8px 0px;
   display: flex;
   align-items: center;
+  z-index: 1;
 `;
 
 const NavContent = styled.div`
@@ -42,6 +43,7 @@ const NavContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 10px 10px 10px lightgrey;
 `;
 
 const NavBrand = styled.div`
