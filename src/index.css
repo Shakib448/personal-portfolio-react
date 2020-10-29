@@ -2,9 +2,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: black !important;
-  overflow: hidden;
 }
 
 button {
   outline: none !important;
+}
+
+body::-webkit-scrollbar {
+  visibility: hidden;
 }
