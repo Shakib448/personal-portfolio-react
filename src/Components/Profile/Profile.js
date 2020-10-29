@@ -48,7 +48,7 @@ const Profile = () => {
               </i>
             </a>
           </div>
-          <button className="btn-2">
+          <button className="btn btn-2">
             <a
               style={{ textDecoration: "none" }}
               href="mailto: shakiba448@gmail.com "

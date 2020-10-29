@@ -67,15 +67,15 @@
   opacity: 1;
 }
 
-button,
-button::after {
+button.btn,
+button.btn::after {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-button {
+button.btn {
   background: none;
   border: 1px solid #3c70da;
   border-radius: 5px;
@@ -89,19 +89,19 @@ button {
   z-index: 1;
 }
 
-button::before,
-button::after {
+button.btn::before,
+button.btn::after {
   background: #000;
   content: "";
   position: absolute;
   z-index: -1;
 }
 
-button:hover {
+button.btn:hover {
   color: #fff;
   border: 1px solid #fff;
 }
-button:hover > a {
+button.btn:hover > a {
   color: #fff;
 }
 
