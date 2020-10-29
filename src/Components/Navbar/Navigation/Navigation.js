@@ -131,7 +131,7 @@ const Navigation = () => {
     <NavContainer>
       <NavContent>
         <NavBrand>
-          <NavBrandName className="mt-2">
+          <NavBrandName className="mt-2 navLinkActive">
             {location.pathname === "/" && "About Me"}
             {location.pathname === "/projects" && "Projects"}
             {location.pathname === "/resume" && "Resume"}
@@ -146,7 +146,9 @@ const Navigation = () => {
             <NavItem key={item.name}>
               <NavLink
                 className="navLink"
-                activeClassName="navLinkActive"
+                activeClassName={
+                  location.pathname === item.link ? "navLinkActive" : null
+                }
                 to={item.link}
               >
                 {item.name}

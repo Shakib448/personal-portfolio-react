@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../Header/Header";
 
 const Blog = () => {
-  return <div>This is blog page</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Blog;

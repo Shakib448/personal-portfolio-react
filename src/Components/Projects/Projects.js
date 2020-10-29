@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../Header/Header";
 
 const Projects = () => {
-  return <div>This is projects page</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Projects;

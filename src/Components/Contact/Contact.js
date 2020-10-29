@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../Header/Header";
 
 const Contact = () => {
-  return <div>This is contact page</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Contact;

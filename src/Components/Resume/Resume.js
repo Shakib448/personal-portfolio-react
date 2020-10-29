@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../Header/Header";
 
 const Resume = () => {
-  return <div>This is resume page</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Resume;
