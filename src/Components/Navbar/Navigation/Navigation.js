@@ -128,7 +128,7 @@ const Navigation = () => {
     <NavContainer>
       <NavContent>
         <NavBrand>
-          <NavBrandName>Brand</NavBrandName>
+          <NavBrandName className="mt-2">Brand</NavBrandName>
         </NavBrand>
         <Menu navState={navState} handleNavState={handleNavState} />
         <NavList display={navState}>
