@@ -1,28 +1,29 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
 import Menu from "../Menu/Menu";
 
 const navItems = [
   {
-    name: "Services",
-    link: "#main",
+    name: "About Me",
+    link: "/",
   },
   {
-    name: "Work",
-    link: "#main",
+    name: "Projects",
+    link: "/projects",
   },
   {
-    name: "About",
-    link: "#main",
+    name: "Resume",
+    link: "/resume",
   },
   {
-    name: "Partners",
-    link: "#main",
+    name: "Blog",
+    link: "/blog",
   },
   {
     name: "Contact",
-    link: "#main",
+    link: "/contact",
   },
 ];
 
@@ -49,7 +50,7 @@ const NavBrand = styled.div`
   color: ${(props) => props.theme.colors.primary};
 `;
 const NavBrandName = styled.h1`
-  font-size: 36px;
+  font-size: 30px;
 `;
 
 const slideIn = keyframes`
@@ -127,6 +128,8 @@ const NavLink = styled.a`
 const Navigation = () => {
   const [navState, setNavState] = useState("default");
 
+  const location = useLocation();
+
   const handleNavState = () => {
     if (navState === "default") {
       setNavState("opened");
@@ -141,7 +144,13 @@ const Navigation = () => {
     <NavContainer>
       <NavContent>
         <NavBrand>
-          <NavBrandName className="mt-2">Brand</NavBrandName>
+          <NavBrandName className="mt-2">
+            {location.pathname === "/" && "About Me"}
+            {location.pathname === "/projects" && "Projects"}
+            {location.pathname === "/resume" && "Resume"}
+            {location.pathname === "/blog" && "Blog"}
+            {location.pathname === "/contact" && "Contact"}
+          </NavBrandName>
         </NavBrand>
         <Menu navState={navState} handleNavState={handleNavState} />
         <NavList display={navState}>
