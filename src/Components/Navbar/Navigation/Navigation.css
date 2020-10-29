@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+.navLink {
+  color: #000;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navLink:hover {
+  text-decoration: none;
+}
+
+.navLinkActive {
+  color: #0056b3;
+}

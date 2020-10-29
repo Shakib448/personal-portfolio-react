@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
-
 import Menu from "../Menu/Menu";
+import "./Navigation.css";
 
 const navItems = [
   {
@@ -34,7 +34,6 @@ const NavContainer = styled.div`
   box-shadow: rgba(43, 83, 135, 0.08) 0px 3px 8px 0px;
   display: flex;
   align-items: center;
-  z-index: 1;
 `;
 
 const NavContent = styled.div`
@@ -113,20 +112,6 @@ const NavItem = styled.li`
   margin: 0 10px;
 `;
 
-const NavLink = styled.a`
-  display: block;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 6px 12px;
-  text-decoration: none;
-  color: ${(props) => props.theme.colors.primary};
-  border-radius: 1px;
-  font-size: 20px;
-  &:hover {
-    color: ${(props) => props.theme.colors.secondary};
-  }
-`;
-
 const Navigation = () => {
   const [navState, setNavState] = useState("default");
 
@@ -154,11 +139,18 @@ const Navigation = () => {
             {location.pathname === "/contact" && "Contact"}
           </NavBrandName>
         </NavBrand>
+
         <Menu navState={navState} handleNavState={handleNavState} />
         <NavList display={navState}>
           {navItems.map((item) => (
             <NavItem key={item.name}>
-              <NavLink href={item.link}>{item.name}</NavLink>
+              <NavLink
+                className="navLink"
+                activeClassName="navLinkActive"
+                to={item.link}
+              >
+                {item.name}
+              </NavLink>
             </NavItem>
           ))}
         </NavList>
