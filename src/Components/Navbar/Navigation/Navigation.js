@@ -73,11 +73,10 @@ const slideOut = keyframes`
 const NavList = styled.ul`
   display: flex;
   margin: 0 20px;
-
   position: fixed;
-  top: 0;
+  top: 80px;
   right: -300px;
-  height: 100vh;
+  height: 440px;
   width: 250px;
   overflow: hidden;
   animation: ${(props) =>

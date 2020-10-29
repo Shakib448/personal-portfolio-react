@@ -4,3 +4,7 @@ body {
   background-color: black !important;
   overflow: hidden;
 }
+
+button {
+  outline: none !important;
+}
