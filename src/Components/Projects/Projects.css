@@ -31,6 +31,7 @@ button.projects__hoverBtn.btn.btn-primary {
 }
 
 .projects__hoverCard.card:hover > button.projects__hoverBtn.btn.btn-primary {
+  background: black;
   opacity: 1;
 }
 
@@ -38,13 +39,16 @@ button.projects__hoverBtn {
   background: black;
   border: none;
 }
-button > span {
+button > h4 {
   color: white;
 }
 
 button.projects__hoverBtn:hover {
-  background: black;
   border: none;
   color: white;
   border: none;
+}
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  z-index: 999;
 }
