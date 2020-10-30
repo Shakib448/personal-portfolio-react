@@ -104,8 +104,12 @@ button.btn {
   position: relative;
   z-index: 1;
 }
+button.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
 
-button > a {
+button > span {
   color: rgb(86, 99, 100);
 }
 
@@ -121,7 +125,7 @@ button.btn:hover {
   color: rgb(86, 99, 100);
   border: 1px solid rgb(4, 176, 102);
 }
-button.btn:hover > a {
+button.btn:hover > span {
   color: white;
 }
 

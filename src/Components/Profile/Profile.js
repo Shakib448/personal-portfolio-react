@@ -60,21 +60,18 @@ const Profile = () => {
             {location.pathname === "/resume" ? (
               <form method="get" action={PDF} target="_blank">
                 <button type="submit" className="btn btn-2">
-                  <a href={PDF} style={{ textDecoration: "none" }}>
-                    {" "}
-                    Resume
-                  </a>
+                  <span>Resume</span>
                 </button>
               </form>
             ) : (
-              <button className="btn btn-2">
-                <a
-                  style={{ textDecoration: "none" }}
-                  href="mailto: shakiba448@gmail.com "
-                >
-                  Email
-                </a>
-              </button>
+              <a
+                style={{ textDecoration: "none" }}
+                href="mailto: shakiba448@gmail.com "
+              >
+                <button className="btn btn-2">
+                  <span>Email</span>
+                </button>
+              </a>
             )}
           </Card.Body>
         </Card>
