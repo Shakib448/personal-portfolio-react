@@ -1,3 +1,21 @@
 .aboutMe {
-  background-color: rgb(211, 211, 211, 0.1);
+  background-color: linear-gradient(180deg, rgb(211, 211, 211, 0.1));
+}
+
+.aboutMe__title {
+  margin: 10px 25px;
+}
+
+.aboutMe__title > h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.aboutMe__title > h5 {
+  margin: 0;
+  color: rgb(4, 176, 102);
+}
+
+.blockquote {
+  color: rgb(86, 99, 100);
 }

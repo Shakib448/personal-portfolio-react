@@ -7,7 +7,18 @@ const AboutMe = () => {
     <>
       <Container className="aboutMe">
         <Row>
-          <blockquote className="blockquote text-center p-3">
+          <div className="aboutMe__title">
+            <h1>About Me</h1>
+            <h5>
+              23 years{" "}
+              <span style={{ color: "rgb(211, 211, 211, 0.1)" }}>/</span>{" "}
+              Self-Learner{" "}
+              <span style={{ color: "rgb(211, 211, 211, 0.1)" }}>/</span>{" "}
+              Freelancer
+            </h5>
+          </div>
+
+          <blockquote className="blockquote  p-3 ">
             <h6 className="mt-2 mb-2">
               <b>
                 {" "}

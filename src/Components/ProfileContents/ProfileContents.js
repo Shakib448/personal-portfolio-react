@@ -7,7 +7,6 @@ import Resume from "../Resume/Resume";
 import Blog from "../Blog/Blog";
 import Contact from "../Contact/Contact";
 import "./ProfileContents.css";
-import Header from "../Header/Header";
 
 const ProfileContents = () => {
   const location = useLocation();

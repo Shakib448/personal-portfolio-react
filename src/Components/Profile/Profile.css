@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 .profile {
   font-family: "Josefin Sans", sans-serif;
+  color: #fff;
 }
 .text-center.p-3.profile__card.card {
   margin-top: -65px;
+  background: #1c1e1f;
 }
 .profile__imgCenter {
   display: block;
@@ -19,6 +21,7 @@
 }
 .profile__card {
   border-radius: 0 0 10px 10px;
+  background-color: rgb(86, 99, 100);
 }
 
 .profile__cardBody {
@@ -32,9 +35,11 @@
 }
 .profile__iconLocation {
   font-size: 15px !important;
+  color: rgb(4, 176, 102);
 }
 .profile__iconPhone {
   font-size: 15px !important;
+  color: rgb(4, 176, 102);
 }
 
 .profile__icon:hover {
@@ -47,7 +52,7 @@
 }
 
 .profile__iconFacebook:hover {
-  color: #3c70da;
+  color: rgb(4, 176, 102);
   opacity: 1;
 }
 
@@ -57,17 +62,16 @@
 }
 
 .profile__iconLinkedIn:hover {
-  color: #0073b2;
+  color: rgb(4, 176, 102);
   opacity: 1;
 }
 
 .profile__iconGithub {
   transition: 0.5s ease-in-out !important;
-  opacity: 0.5;
 }
 
 .profile__iconGithub:hover {
-  opacity: 1;
+  color: rgb(4, 176, 102);
 }
 
 button.btn,
@@ -80,9 +84,9 @@ button.btn::after {
 
 button.btn {
   background: none;
-  border: 1px solid #3c70da;
+  border: 1px solid rgb(4, 176, 102);
   border-radius: 5px;
-  color: #3c70da;
+  color: rgb(4, 176, 102) !important;
   display: block;
   font-size: 1.2em;
   font-weight: bold;
@@ -92,20 +96,24 @@ button.btn {
   z-index: 1;
 }
 
+button > a {
+  color: rgb(86, 99, 100);
+}
+
 button.btn::before,
 button.btn::after {
-  background: #000;
+  background: rgb(4, 176, 102);
   content: "";
   position: absolute;
   z-index: -1;
 }
 
 button.btn:hover {
-  color: #fff;
-  border: 1px solid #fff;
+  color: rgb(86, 99, 100);
+  border: 1px solid rgb(4, 176, 102);
 }
 button.btn:hover > a {
-  color: #fff;
+  color: white;
 }
 
 .btn-2::after {
