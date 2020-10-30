@@ -3,12 +3,13 @@ import { Container, Row } from "react-bootstrap";
 import Profile from "./Components/Profile/Profile";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProfileContents from "./Components/ProfileContents/ProfileContents";
+import "./App.css";
 
 function App() {
   return (
-    <Container>
+    <Container className="app">
       <Row
-        style={{ height: "600px" }}
+        style={{ height: "650px" }}
         className="align-items-center justify-content-md-center no-gutters"
       >
         <Router>
