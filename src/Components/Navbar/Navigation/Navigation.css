@@ -20,3 +20,34 @@
 .navLinkActive {
   color: #0056b3;
 }
+
+.navLink:hover {
+  color: #0056b3;
+}
+
+.navLink {
+  position: relative;
+}
+
+.navLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #0056b3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navLink:hover:after {
+  width: 100%;
+  left: 0;
+}
+.navLinkActive:after {
+  width: 100%;
+  left: 0;
+  color: #0056b3;
+}
