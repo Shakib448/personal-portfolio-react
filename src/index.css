@@ -2,9 +2,17 @@ body {
   margin: 0;
   padding: 0;
   background-color: black !important;
-  overflow: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none !important;
+}
 button {
   outline: none !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: scroll !important;
+  }
 }

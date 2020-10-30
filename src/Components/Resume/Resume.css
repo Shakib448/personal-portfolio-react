@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+.resume__title {
+  margin: 10px 25px;
+}
+
+.resume__title > blockquote > p > i {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.resume__title > h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.resume__title > h5 {
+  margin: 0;
+  color: rgb(4, 176, 102);
+}
+
+hr {
+  background: rgb(70, 81, 94);
+}

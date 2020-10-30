@@ -6,7 +6,7 @@ import "./Navigation.css";
 
 const navItems = [
   {
-    name: "About Me",
+    name: "About ",
     link: "/",
   },
   {

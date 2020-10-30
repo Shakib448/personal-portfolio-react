@@ -8,8 +8,10 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import PhoneIcon from "@material-ui/icons/Phone";
 import Header from "../Header/Header";
+import { useLocation } from "react-router-dom";
 
 const Profile = () => {
+  const location = useLocation();
   return (
     <>
       <Col className="profile m-3" lg md={8} sm={12}>
@@ -33,7 +35,7 @@ const Profile = () => {
                 +8801796643426
               </h6>
             </Card.Title>
-            <Card.Title className="text-secondary m-0 profile__title">
+            <Card.Title className="m-0 profile__title">
               React Developer
             </Card.Title>
             <div className=" mt-3 mb-3">
@@ -53,14 +55,20 @@ const Profile = () => {
                 </i>
               </a>
             </div>
-            <button className="btn btn-2">
-              <a
-                style={{ textDecoration: "none" }}
-                href="mailto: shakiba448@gmail.com "
-              >
-                Email Me
-              </a>
-            </button>
+            {location.pathname === "/resume" ? (
+              <button className="btn btn-2">
+                <a style={{ textDecoration: "none" }}> Resume</a>
+              </button>
+            ) : (
+              <button className="btn btn-2">
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="mailto: shakiba448@gmail.com "
+                >
+                  Email
+                </a>
+              </button>
+            )}
           </Card.Body>
         </Card>
       </Col>

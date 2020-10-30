@@ -7,6 +7,11 @@
   margin-top: -65px;
   background: #1c1e1f;
 }
+.profile__title.card-title.h5 {
+  background: rgb(4, 176, 102);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 .profile__imgCenter {
   display: block;
   margin-left: auto;

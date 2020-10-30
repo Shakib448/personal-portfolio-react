@@ -1,0 +1,20 @@
+.resumeSkills__icon {
+  font-size: 50px !important;
+  color: rgb(4, 176, 102) !important;
+  margin: 0 20px 0 0;
+}
+
+.resumeSkills {
+  display: flex;
+  align-items: center;
+}
+
+.resumeSkills > h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.resume__knowledgeIcon {
+  color: rgb(4, 176, 102) !important;
+  font-size: 30px !important;
+}
