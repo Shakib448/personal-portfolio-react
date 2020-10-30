@@ -1,13 +1,11 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import Header from "../Header/Header";
 import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
     <>
-      <Header />
-      <Container className="aboutMe" style={{}}>
+      <Container className="aboutMe">
         <Row>
           <blockquote className="blockquote text-center p-3">
             <h6 className="mt-2 mb-2">

@@ -53,7 +53,7 @@ const Profile = () => {
               style={{ textDecoration: "none" }}
               href="mailto: shakiba448@gmail.com "
             >
-              Email
+              Email Me
             </a>
           </button>
         </Card.Body>

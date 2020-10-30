@@ -7,12 +7,16 @@ import Resume from "../Resume/Resume";
 import Blog from "../Blog/Blog";
 import Contact from "../Contact/Contact";
 import "./ProfileContents.css";
+import Header from "../Header/Header";
 
 const ProfileContents = () => {
   const location = useLocation();
   return (
     <>
       <Col className="profileContents m-3" lg={8} md={12} sm={12}>
+        {/* This condition used for nav stable  */}
+        {location.pathname === "/refusedHeaderRefresh" ? null : <Header />}
+        {/*  */}
         {location.pathname === "/" && <AboutMe />}
         {location.pathname === "/projects" && <Projects />}
         {location.pathname === "/resume" && <Resume />}

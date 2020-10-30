@@ -1,10 +1,22 @@
 import React from "react";
-import Header from "../Header/Header";
+import { Container, Row } from "react-bootstrap";
 
 const Blog = () => {
   return (
     <>
-      <Header />
+      <Container>
+        <Row
+          style={{ height: "220px" }}
+          className="align-items-center justify-content-center"
+        >
+          <h3>
+            This page is under construction{" "}
+            <span role="img" aria-label="strong">
+              🔺
+            </span>{" "}
+          </h3>
+        </Row>
+      </Container>
     </>
   );
 };
