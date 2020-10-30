@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "./Projects.css";
+import CloseIcon from "@material-ui/icons/Close";
 import Modal from "react-modal";
 
 const customStyles = {
@@ -18,30 +19,36 @@ Modal.setAppElement("#root");
 
 const Projects = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
-  function openModal() {
+  const openModal = () => {
     setIsOpen(true);
-  }
+  };
 
-  function closeModal() {
+  const closeModal = () => {
     setIsOpen(false);
-  }
+  };
   return (
     <>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
       >
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
+        <button className="closeModalBtn" onClick={closeModal}>
+          <CloseIcon className="closeModalIcon" />
+        </button>
+        <Row>
+          <Col md={6} sm={12}>
+            <Card.Img
+              height="200px"
+              width="200px"
+              variant="top"
+              src="https://i.ibb.co/F4WcxDS/resume.jpg"
+            />
+          </Col>
+          <Col md={6} sm={12}>
+            I love you
+          </Col>
+        </Row>
       </Modal>
       <Container>
         <Row>

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 .projects__title {
   margin: 10px 25px;
-  /* font-family: "Playfair Display", serif; */
 }
 
 .projects__title > h1 {
@@ -39,6 +38,10 @@ button.projects__hoverBtn {
   background: black;
   border: none;
 }
+button.projects__hoverBtn:focus {
+  outline: none;
+  box-shadow: none;
+}
 button > h4 {
   color: white;
 }
@@ -51,4 +54,25 @@ button.projects__hoverBtn:hover {
 
 .ReactModal__Overlay.ReactModal__Overlay--after-open {
   z-index: 999;
+  font-family: "Playfair Display", serif;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open {
+  background-color: #1c1e1f !important;
+  border: none !important;
+}
+
+button.closeModalBtn {
+  background: transparent;
+  border: none;
+}
+
+button.closeModalBtn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.closeModalIcon {
+  font-size: 40px !important;
+  color: rgb(4, 176, 102) !important;
 }
