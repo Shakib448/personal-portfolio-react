@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+.projects__title {
+  margin: 10px 25px;
+  /* font-family: "Playfair Display", serif; */
+}
+
+.projects__title > h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.projects__title > h5 {
+  margin: 0;
+  color: rgb(4, 176, 102);
+}
+
+.projects__hoverCard.card {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+button.projects__hoverBtn.btn.btn-primary {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  padding: auto;
+  opacity: 0;
+}
+
+.projects__hoverCard.card:hover > button.projects__hoverBtn.btn.btn-primary {
+  opacity: 1;
+}
+
+button.projects__hoverBtn {
+  background: black;
+  border: none;
+}
+button > span {
+  color: white;
+}
+
+button.projects__hoverBtn:hover {
+  background: black;
+  border: none;
+  color: white;
+  border: none;
+}

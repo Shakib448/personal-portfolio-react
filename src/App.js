@@ -18,7 +18,6 @@ function App() {
             <Route exact path="/projects" component={ProfileContents} />
             <Route exact path="/resume" component={ProfileContents} />
             <Route exact path="/blog" component={ProfileContents} />
-            <Route exact path="/contact" component={ProfileContents} />
           </Switch>
         </Router>
       </Row>

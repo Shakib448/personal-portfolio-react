@@ -5,7 +5,6 @@ import AboutMe from "../AboutMe/AboutMe";
 import Projects from "../Projects/Projects";
 import Resume from "../Resume/Resume";
 import Blog from "../Blog/Blog";
-import Contact from "../Contact/Contact";
 import "./ProfileContents.css";
 
 const ProfileContents = () => {
@@ -17,7 +16,6 @@ const ProfileContents = () => {
         {location.pathname === "/projects" && <Projects />}
         {location.pathname === "/resume" && <Resume />}
         {location.pathname === "/blog" && <Blog />}
-        {location.pathname === "/contact" && <Contact />}
       </Col>
     </>
   );

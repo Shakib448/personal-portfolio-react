@@ -21,10 +21,6 @@ const navItems = [
     name: "Blog",
     link: "/blog",
   },
-  {
-    name: "Contact",
-    link: "/contact",
-  },
 ];
 
 const NavContainer = styled.div`
