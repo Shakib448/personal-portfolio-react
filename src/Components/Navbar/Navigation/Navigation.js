@@ -30,7 +30,7 @@ const navItems = [
 const NavContainer = styled.div`
   width: 100%;
   height: 64px;
-  background-color: white;
+  background-color: rgb(86, 99, 100);
   box-shadow: rgba(43, 83, 135, 0.08) 0px 3px 8px 0px;
   display: flex;
   align-items: center;
@@ -95,7 +95,7 @@ const NavList = styled.ul`
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 65px;
-  background-color: white;
+  background-color: #1c1e1f;
 `;
 
 const NavItem = styled.li`
