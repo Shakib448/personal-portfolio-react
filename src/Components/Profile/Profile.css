@@ -2,6 +2,9 @@
 .profile {
   font-family: "Josefin Sans", sans-serif;
 }
+.text-center.p-3.profile__card.card {
+  margin-top: -65px;
+}
 .profile__imgCenter {
   display: block;
   margin-left: auto;

@@ -42,16 +42,7 @@ const NavContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 10px 10px 10px lightgrey;
-`;
-
-const NavBrand = styled.div`
-  margin: 0 20px;
-  width: 160px;
-  color: ${(props) => props.theme.colors.primary};
-`;
-const NavBrandName = styled.h1`
-  font-size: 30px;
+  z-index: 100;
 `;
 
 const slideIn = keyframes`
@@ -91,8 +82,8 @@ const NavList = styled.ul`
   position: absolute;
   top: 0;
   right: -300px;
-  height: 440px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   animation: ${(props) =>
       props.display === "default"
@@ -109,7 +100,7 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   list-style: none;
-  margin: 0 10px;
+  margin: 0 50px;
 `;
 
 const Navigation = () => {
@@ -130,16 +121,6 @@ const Navigation = () => {
   return (
     <NavContainer>
       <NavContent>
-        <NavBrand>
-          <NavBrandName className="mt-2 navLinkActive">
-            {location.pathname === "/" && "About Me"}
-            {location.pathname === "/projects" && "Projects"}
-            {location.pathname === "/resume" && "Resume"}
-            {location.pathname === "/blog" && "Blog"}
-            {location.pathname === "/contact" && "Contact"}
-          </NavBrandName>
-        </NavBrand>
-
         <Menu navState={navState} handleNavState={handleNavState} />
         <NavList display={navState}>
           {navItems.map((item) => (

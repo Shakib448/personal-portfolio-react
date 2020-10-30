@@ -14,9 +14,6 @@ const ProfileContents = () => {
   return (
     <>
       <Col className="profileContents m-3" lg={8} md={12} sm={12}>
-        {/* This condition used for nav stable  */}
-        {location.pathname === "/refusedHeaderRefresh" ? null : <Header />}
-        {/*  */}
         {location.pathname === "/" && <AboutMe />}
         {location.pathname === "/projects" && <Projects />}
         {location.pathname === "/resume" && <Resume />}
