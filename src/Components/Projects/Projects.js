@@ -1,21 +1,7 @@
 import React, { useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "./Projects.css";
-import CloseIcon from "@material-ui/icons/Close";
-import Modal from "react-modal";
-
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
-};
-
-Modal.setAppElement("#root");
+import ProjectsDetails from "./ProjectsDetails/ProjectsDetails";
 
 const Projects = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -28,28 +14,8 @@ const Projects = () => {
   };
   return (
     <>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={customStyles}
-      >
-        <button className="closeModalBtn" onClick={closeModal}>
-          <CloseIcon className="closeModalIcon" />
-        </button>
-        <Row>
-          <Col md={6} sm={12}>
-            <Card.Img
-              height="200px"
-              width="200px"
-              variant="top"
-              src="https://i.ibb.co/F4WcxDS/resume.jpg"
-            />
-          </Col>
-          <Col md={6} sm={12}>
-            I love you
-          </Col>
-        </Row>
-      </Modal>
+      <ProjectsDetails modalIsOpen={modalIsOpen} closeModal={closeModal} />
+
       <Container>
         <Row>
           <div className="projects__title">
