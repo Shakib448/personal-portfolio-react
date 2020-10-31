@@ -1,8 +1,15 @@
-.app {
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+@media (min-width: 992px) {
+  .app {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

@@ -8,10 +8,7 @@ import "./App.css";
 function App() {
   return (
     <Container className="app">
-      <Row
-        style={{ height: "650px" }}
-        className="align-items-center justify-content-md-center no-gutters"
-      >
+      <Row className="center justify-content-md-center no-gutters">
         <Router>
           <Profile />
           <Switch>
