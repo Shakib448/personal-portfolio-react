@@ -3,8 +3,45 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import "./Projects.css";
 import ProjectsDetails from "./ProjectsDetails/ProjectsDetails";
 
+const projects = [
+  {
+    title: "Real Time Chatting Application",
+    description:
+      "A real-time chatting application where people can create their private room and chat with each other.",
+    liveLink: "https://real-time-chat-app-69922.web.app/",
+    githubLink: "https://github.com/Shakib448/real-time-chat-app-client",
+    img: "https://i.ibb.co/Jyp6nVn/Screenshot-3.png",
+    technology:
+      "React.js, Node.js, Express.js, Socket.io, Firebase Hosting, Heroku",
+  },
+  {
+    title: "Creative Agency",
+    description:
+      "A single page web app with a dashboard where users can select their courses and also can give reviews from their dashboard. And an Admin can check the course details and can delete from his dashboard as well. ",
+    liveLink: "https://creative-agency-e0f45.web.app/",
+    githubLink: "https://github.com/Shakib448/creative-agency-client",
+    img: "https://i.ibb.co/9GD2dH9/Screenshot-4.png",
+    technology:
+      "React.js, Node.js, Express.js, MongoDB, React Bootstrap, Fire-AUTH, Firebase Hosting, Heroku, Heroku  Deployment.",
+  },
+  {
+    title: "COVID 19 App",
+    description:
+      "A real-time COVID 19 tracker app. Where people can check local and global corona virus cases with active, recoveries and death rate.",
+    liveLink: "https://shakib448.github.io/COVID-19-React/",
+    githubLink: "https://github.com/Shakib448/real-time-chat-app-client",
+    img: "https://i.ibb.co/zf8zCRq/Screenshot-5.png",
+    technology: "React.js, Material UI, API, Chart.js. ",
+  },
+];
+
 const Projects = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [project, setProject] = useState([]);
+
+  const handleProject = (projectDetails) => {
+    setProject(projectDetails);
+  };
   const openModal = () => {
     setIsOpen(true);
   };
@@ -14,7 +51,11 @@ const Projects = () => {
   };
   return (
     <>
-      <ProjectsDetails modalIsOpen={modalIsOpen} closeModal={closeModal} />
+      <ProjectsDetails
+        project={project}
+        modalIsOpen={modalIsOpen}
+        closeModal={closeModal}
+      />
 
       <Container>
         <Row>
@@ -23,21 +64,27 @@ const Projects = () => {
           </div>
         </Row>
         <Row>
-          <Col className="mt-3 mb-3" lg={4} md={6} sm={12}>
-            <Card className="projects__hoverCard">
-              <Card.Img
-                height="200px"
-                variant="top"
-                src="https://i.ibb.co/F4WcxDS/resume.jpg"
-              />
-              <button
-                onClick={openModal}
-                className="projects__hoverBtn  btn btn-primary"
-              >
-                <h4>Preview</h4>
-              </button>
-            </Card>
-          </Col>
+          {projects.map((project, id) => (
+            <Col key={id} className="mt-3 mb-3" lg={6} md={6} sm={12}>
+              <Card className="projects__hoverCard">
+                <Card.Img
+                  height="200px"
+                  width="200px"
+                  variant="top"
+                  src={project.img}
+                />
+                <button
+                  onClick={() => {
+                    openModal();
+                    handleProject(project);
+                  }}
+                  className="projects__hoverBtn  btn btn-primary"
+                >
+                  <h4>Preview</h4>
+                </button>
+              </Card>
+            </Col>
+          ))}
         </Row>
       </Container>
     </>

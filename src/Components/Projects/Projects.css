@@ -39,8 +39,8 @@ button.projects__hoverBtn {
   border: none;
 }
 button.projects__hoverBtn:focus {
-  outline: none;
-  box-shadow: none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 button > h4 {
   color: white;
@@ -60,6 +60,7 @@ button.projects__hoverBtn:hover {
 .ReactModal__Content.ReactModal__Content--after-open {
   background-color: #1c1e1f !important;
   border: none !important;
+  width: 50% !important;
 }
 
 button.closeModalBtn {
@@ -75,4 +76,16 @@ button.closeModalBtn:focus {
 .closeModalIcon {
   font-size: 40px !important;
   color: rgb(4, 176, 102) !important;
+}
+
+@media (max-width: 576px) {
+  .projects__title > h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .ReactModal__Content.ReactModal__Content--after-open {
+    width: 75% !important;
+  }
 }

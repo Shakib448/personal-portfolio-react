@@ -1,0 +1,33 @@
+.projectDescription {
+  color: rgb(86, 99, 100);
+}
+
+.projectDetails {
+  font-size: 40px !important;
+  transition: transform 0.5s ease-in-out !important;
+}
+
+.projectDetails:hover {
+  transform: scale(1.5);
+}
+
+.projectDetailsPublic {
+  color: rgb(86, 99, 100);
+
+  transition: 0.5s ease-in-out !important;
+  opacity: 0.5;
+}
+
+.projectDetailsPublic:hover {
+  color: rgb(4, 176, 102);
+  opacity: 1;
+}
+
+.projectDetailsGithub {
+  color: rgb(86, 99, 100);
+  transition: 0.5s ease-in-out !important;
+}
+
+.projectDetailsGithub:hover {
+  color: rgb(4, 176, 102);
+}

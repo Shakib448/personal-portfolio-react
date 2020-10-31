@@ -22,3 +22,12 @@
 hr {
   background: rgb(70, 81, 94);
 }
+
+@media (max-width: 576px) {
+  .resume__title > h1 {
+    font-size: 3rem;
+  }
+  .resume__title > h5 {
+    font-size: 0.9rem;
+  }
+}

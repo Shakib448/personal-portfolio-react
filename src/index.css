@@ -1,5 +1,6 @@
 body {
   background-color: black !important;
+  overflow-y: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -9,8 +10,9 @@ button {
   outline: none !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   body {
-    overflow: scroll !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
   }
 }
