@@ -4,17 +4,42 @@ import { Container, Row } from "react-bootstrap";
 const Blog = () => {
   return (
     <>
-      <Container>
-        <Row
-          style={{ height: "220px" }}
-          className="align-items-center justify-content-center"
-        >
-          <h3>
-            This page is under construction{" "}
-            <span role="img" aria-label="strong">
-              🔺
-            </span>{" "}
-          </h3>
+      <Container className="aboutMe">
+        <Row>
+          <div className="aboutMe__title">
+            <h1>Blog</h1>
+
+            <blockquote className="blockquote pt-3 pb-3">
+              <h6 className="mt-2 mb-2">
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+                <b>This page is under construction ⚠</b>
+              </h6>
+            </blockquote>
+          </div>
         </Row>
       </Container>
     </>

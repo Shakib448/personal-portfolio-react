@@ -1,6 +1,9 @@
 body {
   background-color: black !important;
   overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
