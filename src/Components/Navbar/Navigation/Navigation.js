@@ -17,10 +17,6 @@ const navItems = [
     name: "Resume",
     link: "/resume",
   },
-  {
-    name: "Blog",
-    link: "/blog",
-  },
 ];
 
 const NavContainer = styled.div`

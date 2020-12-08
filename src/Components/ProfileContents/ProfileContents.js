@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import AboutMe from "../AboutMe/AboutMe";
 import Projects from "../Projects/Projects";
 import Resume from "../Resume/Resume";
-import Blog from "../Blog/Blog";
 import "./ProfileContents.css";
 
 const ProfileContents = () => {
@@ -15,7 +14,6 @@ const ProfileContents = () => {
         {location.pathname === "/" && <AboutMe />}
         {location.pathname === "/projects" && <Projects />}
         {location.pathname === "/resume" && <Resume />}
-        {location.pathname === "/blog" && <Blog />}
       </Col>
     </>
   );

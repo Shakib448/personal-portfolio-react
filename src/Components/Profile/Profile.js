@@ -10,8 +10,6 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import Header from "../Header/Header";
 import { useLocation } from "react-router-dom";
 
-import PDF from "../../PdfResume/Muktadir.pdf";
-
 const Profile = () => {
   const location = useLocation();
   return (
@@ -58,7 +56,11 @@ const Profile = () => {
               </a>
             </div>
             {location.pathname === "/resume" ? (
-              <form method="get" action={PDF} target="_blank">
+              <form
+                method="get"
+                action="https://drive.google.com/file/d/16JjPmgIivhdQ0UmXI-YzoetO3L2ijq_O/view?usp=sharing"
+                target="_blank"
+              >
                 <button type="submit" className="btn btn-2">
                   <span>Resume</span>
                 </button>
