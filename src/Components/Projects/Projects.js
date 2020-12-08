@@ -5,6 +5,25 @@ import ProjectsDetails from "./ProjectsDetails/ProjectsDetails";
 
 const projects = [
   {
+    title: "DevConnector",
+    description:
+      "This is a full-stack web application where people can create their profile add experience, education also deletes their profile. This project is built on redux.",
+    liveLink: "https://immense-brushlands-28060.herokuapp.com/",
+    githubLink: "https://github.com/Shakib448/mern-stack-social-app",
+    img: "https://i.ibb.co/48Tswrg/Dev.png",
+    technology:
+      "React.js, Node.js, Express.js, MongoDB, Redux, Express-validation, Heroku, Heroku Deployment",
+  },
+  {
+    title: "Shopping Cart",
+    description:
+      "This is a complex redux shopping cart operation. Where you can select a specific product in your cart then increase or decries their product quantity also show their total amount, tax rate, and total.",
+    liveLink: "https://infallible-ptolemy-d799dd.netlify.app/",
+    githubLink: "https://github.com/Shakib448/redux-toolkit-shoppin-cart",
+    img: "https://i.ibb.co/BtSpgs9/shop.png",
+    technology: "React.js, Redux, Redux/toolkit, Netify, Hosting",
+  },
+  {
     title: "Real Time Chatting Application",
     description:
       "A real-time chatting application where people can create their private room and chat with each other.",
